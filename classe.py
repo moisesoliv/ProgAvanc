@@ -1,6 +1,6 @@
 from numpy import pi
 
-class circunferencia(object):
+class Circunferencia(object):
     def __init__(self, raio):
         self.raio = raio
 
@@ -11,8 +11,8 @@ class circunferencia(object):
         return 2*self.raio*pi
 
 def main():
-    a = circunferencia(3)
-    b = circunferencia(10)
+    a = Circunferencia(3)
+    b = Circunferencia(10)
 
     print(a.perimetro())
     print(b.perimetro())
