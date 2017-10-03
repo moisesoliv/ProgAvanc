@@ -1,20 +1,20 @@
 from Login import *
 from View import *
-global senha
 class Maquina:
     def __init__(self, saldomaq):
         self.saldomaquina = saldomaq
         self.v = View()
         self.cartao = Cartao()
-    def monitoracartao(self, cardid):
-        self.cardIdentifier = cardid
-        if self.cardIdentifier == None:
-            print("insira cartao")
+
+    def monitoracartao(self):
+        self.cardId = self.cartao.cardIdentifier
+        if self.cardId == None:
+            self.v.mensagemCartao(True)
         else:
-            print("cartao inserido")
+            self.v.mensagemCartao(False)
             pass
 
-    def inputSenhaUser(self,senha):
+    def inputSenhaUser(self):
         self.senha = self.v.campoDeSenha()
 
     def login(self):
@@ -44,19 +44,27 @@ class Maquina:
         if self.saldocartao >= self.valorSaque:
             if self.saldomaquina >= self.valorSaque:
                 self.ejetaValor()
-        else:
-            mensagem("Saldo Insuficiente")
+
 
     def ejetaValor(self):
         self.saldomaquina -= self.valorSaque
         self.saldocartao -= self.valorSaque
-        self.cartao.----(self.saldocartao)
+        self.cartao.atualizaSaldo(self.saldocartao)
+
     def opcaoCancela(self):
-        pass
+        self.monitoracartao()
+
+
+
+def main:
+    m = Maquina(100000000.00)
+    m.monitoracartao()
 
 
 
 
+if __name__=="__main__":
+    main()
 
 
 
