@@ -19,4 +19,16 @@ class View():
 
 	def botaoSaldo(self):
 		return True
-			
+
+	def campoSaldo(self, saldo):
+		self.saldo = saldo
+		print("RS %f.2",saldo)
+
+	def campoDeSaque(self):
+		self.s = float(raw_input("Digite o valor desejado: "))
+		if s > self.saldo:
+			print("Saldo Insuficiente")
+		
+
+	def botaoSaque(self):
+		return True
