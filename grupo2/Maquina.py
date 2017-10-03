@@ -11,6 +11,7 @@ class Maquina:
         print("Insira cartao na maquina!")
         card = str(input())
         if card == cartao.id(card):
+            print("Cartao aceito")
 
     def inputSenhaUser(self, ):
         view.campoDeSenha()
@@ -34,9 +35,12 @@ class Maquina:
     def opcaoSaque(self, ):
         login.verificaSenha()
     def comparaSaldo():
-        
+        if saldoDaMaquina-campoDeSaldo > 0:
+            print("Saldo disponivel")
+        else print("Saldo indisponivel")
     def ejetaValor():
-        pass
+        print("Recolhar o valor")
     def opcaoCancela():
-        pass
+        if botaoCancela == True:
+            print("operação cancelada, retornando a tela inicial")
 
