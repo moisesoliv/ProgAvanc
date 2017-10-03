@@ -1,4 +1,4 @@
-View():
+class View():
 	def __init__(self,valorDeSaque):
 		self.valorDeSaque = float(valorDeSaque)
 
@@ -7,14 +7,14 @@ View():
 		resposta = input()
 		return resposta
 
-	def mensagemcartao(self, bool(cartao)):
+	def mensagemcartao(self, cartao):
 		if cartao == 1:
 			print("Cartao inserido")
 		else:
 			print("Insira o cartao")
 
 
-	def mensagemSenha(self, senha)
+	def mensagemSenha(self, senha):
 		if self.campo == senha:
 			print("Senha correta")
 
@@ -30,5 +30,5 @@ View():
 
 	def campoDeSaque(self):
 		print("Digite a quantidade a ser sacada: ")
-		saque = int(input())
-		return saque
+		self.saque = int(input())
+		
