@@ -1,0 +1,19 @@
+Grupo 1
+View
+-
+Maquina
+-
+Login
+-
+Cartão
+-
+
+Grupo 2 
+View
+-
+Maquina
+-
+Login
+-
+Cartão
+-
