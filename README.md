@@ -1,2 +1,2 @@
 # ProgAvanc
-Repositório para a disciplica de programação avançada 
+Repositório para a disciplina de programação avançada 
