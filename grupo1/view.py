@@ -5,7 +5,7 @@ class View():
 		self.saque = saque
 
 	def mensagem(self):
-		print("Catão Inserido")
+		print("Cartão Inserido")
 
 	def campodesenha(self):
 		a = str(raw_input("Insira sua senha: "))
