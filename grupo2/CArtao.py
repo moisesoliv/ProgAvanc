@@ -4,37 +4,38 @@ class Cartao():
 		self.senhaDoCartao = senhaDoCartao
 		self.saldoCartao = float(saldoCartao)/100
 
-cartoes = [] 
+	def enviaIdentifier(identificador):
+		for i in cartoes:
+			if i.cardIdentifier == identificador:
+				return identificador
+		return 'Erro'
 
-def criaObj():
-	import csv 
-	p = open("cartoes.csv", 'r')
-	print p
+	def enviaSenhaCartao(identificador):
+		for i in cartoes:
+			if i.cardIdentifier == identificador:
+				return i.senhaDoCartao
+		return 'Erro'
+
+	def enviaSaldo(identificador):
+		for i in cartoes:
+			if i.cardIdentifier == identificador:
+				return i.saldoCartao
+		return 'Erro'
 
 
-	for linha in p.readlines():
-		elementos = linha.split(',')
-		cartoes.append(Cartao(elementos[0],elementos[1],elementos[2]))
+	def criaObj():
+		cartoes = [] 
+		import csv 
+		p = open("cartoes.csv", 'r')
+		print p
 
-criaObj()
 
-def id(identificador):
-	for i in cartoes:
-		if i.cardIdentifier == identificador:
-			return identificador
-	return 'Erro'
+		for linha in p.readlines():
+			elementos = linha.split(',')
+			cartoes.append(Cartao(elementos[0],elementos[1],elementos[2]))
 
-def senha(identificador):
-	for i in cartoes:
-		if i.cardIdentifier == identificador:
-			return i.senhaDoCartao
-	return 'Erro'
 
-def saldo(identificador):
-	for i in cartoes:
-		if i.cardIdentifier == identificador:
-			return i.saldoCartao
-	return 'Erro'
+
 
 
 
