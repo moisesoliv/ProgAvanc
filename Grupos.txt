@@ -14,7 +14,9 @@ Cartão
 
 Grupo 2 
 View
--
+Davi Klein
+Bruno Facco
+
 Maquina
 -
 Login
